@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>More About My Crafts</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- D3 library -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <!-- Chart function  -->
+    <script src="chart.js"></script>
+</head>
+<body>
+    <!-- Navigation header (shared by both pages) -->
+    <div id="header" class="header">
+        <a href="./website.html" class="container clickable" id="account-container">
+        </a>
+        <div class="container" id="title-container">
+        </div>
+        <div class="container" id="pages-container">
+            <a class="pages-btn clickable" href="./index.html">Home</a>
+            <a class="pages-btn clickable" href="./secondpage.html">More about me!</a>
+        </div>
+    </div>
+
+    <div class="container body-container">
+        <!-- Heading  -->
+        <h2>More about my crafts!</h2>
+
+        <!-- Descriptive text -->
+        <p>One hobby I've recently picked up is bead embroidery. It's just like regular embroidery, except that with each stitch, 
+            you loop a bead onto the needle so that the design is created by beads rather than the embroidery floss, which gives it more dimension. 
+            I've always wanted to get into bead embroidery because it's a huge part of South Asian culture. All of our cultural outfits
+            are usually embroidered with all different kinds of beads, and the beadwork is so intricate and thoughtful that I wanted
+            to see if I could recreate it myself. It definitely takes a lot more time and effort that I thought, but it's extremely rewarding when you finally finish
+            a design. I bought a Trader Joe's tote bag that I've been embroidering with a bunch of designs that 
+            I found on Pinterest. So far, I've embroidered a sun, a watermelon, an evil eye amulet, a butterfly, and I've started to embroider a seashell.
+            My favorite design so far is probably the butterfly because I love how the combination of the colors of beads looks together. The blue and white beads
+            create such a cool pattern on the butterfly's wings. I'm always looking for more things to embroider onto the bag so, if you have any suggestions,
+            please let me know!
+        </p>
+
+        <!-- Image -->
+        <img src="IMG_5648.jpg" alt="[Image description]" width="300px">
+
+        <!-- List -->
+        <h3>List of designs I've embroidered so far:</h3>
+        <ul>
+            <li>Watermelon</li>
+            <li>Butterfly</li>
+            <li>Sun</li>
+            <li>Evil Eye (not pictured)</li>
+            <li>Seashell (in progress)</li>
+        </ul>
+
+        <!-- D3 visualization drawn by addBeadChart() in chart.js -->
+        <h3>Beads used by color</h3>
+        <div id="bead-chart-container" class="center-content">
+            <div id="bead_viz"></div>
+            <script>addBeadChart()</script>
+        </div>
+    </div>
+</body>
+</html>

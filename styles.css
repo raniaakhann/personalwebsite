@@ -1,0 +1,89 @@
+/* Whole page: font, colors, and centered text */
+body {
+  margin: 0;
+  font-family: 'Poppins', Courier, monospace;
+  color: #a32772;
+  background: #fafafa;
+  text-align: center;
+}
+
+/* Header bar at the top */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background: #f2a7c0;
+  color: white;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+/* Containers line their contents up in a row */
+.container {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation buttons */
+#pages-container {
+  gap: 10px;
+}
+
+.pages-btn {
+  color: white;
+  text-decoration: none;
+  padding: 8px 14px;
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+.pages-btn:hover {
+  background: white;
+  color: #2c3e50;
+}
+
+/* Main content: stacked in a centered column */
+.body-container {
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.body-container p {
+  line-height: 1.6;
+}
+
+/* Keep images from overflowing on small screens */
+img {
+  max-width: 100%;
+}
+
+/* Center lists as a block, but keep items aligned */
+ul, ol {
+  display: inline-block;
+  text-align: left;
+}
+
+/* Footer / contact section */
+.footer {
+  background: #f2a7c0;
+  color: white;
+  padding: 15px;
+}
+
+.footer a {
+  color: #fafafa;
+}
+
+svg text {
+  font-family: 'Poppins', Courier, monospace;
+  fill: #a32772;
+}
+
+svg {
+  color: #a32772;
+}
